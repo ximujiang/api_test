@@ -1,0 +1,12 @@
+2023-04-06 00:02:15 [INFO]: 执行文件-> test_learn.yml
+2023-04-06 00:02:15 [INFO]: base_url-> None
+2023-04-06 00:02:15 [INFO]: variables-> {}
+2023-04-06 00:02:15 [INFO]: 运行用例-> test_learn
+2023-04-06 00:02:15 [INFO]: 执行文件-> testcaseaaaa.yml
+2023-04-06 00:02:15 [INFO]: base_url-> None
+2023-04-06 00:02:15 [INFO]: variables-> {}
+2023-04-06 00:02:15 [INFO]: 运行用例-> test_case_title
+2023-04-06 00:02:15 [INFO]: 执行文件-> testcaseaaaa.yml
+2023-04-06 00:02:15 [INFO]: base_url-> None
+2023-04-06 00:02:15 [INFO]: variables-> {}
+2023-04-06 00:02:15 [INFO]: 运行用例-> test_case2

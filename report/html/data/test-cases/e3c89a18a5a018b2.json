@@ -1,0 +1,112 @@
+{
+  "uid" : "e3c89a18a5a018b2",
+  "name" : "test_learn",
+  "fullName" : "testcase.learn.test_learn.TestLearn#test_learn",
+  "historyId" : "1f946f06d0d459d9017402001e59e2e5",
+  "time" : {
+    "start" : 1680710535358,
+    "stop" : 1680710535376,
+    "duration" : 18
+  },
+  "status" : "broken",
+  "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Administrator\\\\PycharmProjects\\\\api_test\\\\test_learn.yaml'",
+  "statusTrace" : "self = <testcase.learn.test_learn.TestLearn object at 0x0000020E9C14B1F0>\n\n    @allure.story(\"测试用例\")\n    def test_learn(self):\n>       self.get_case_step(selector='get_case')\n\ntestcase\\learn\\test_learn.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nkw\\casekw\\casekw.py:13: in get_case_step\n    name = self.get_data(selector)\nutils\\yamlutil.py:39: in get_data\n    data = self.read_yaml(FilePath)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <testcase.learn.test_learn.TestLearn object at 0x0000020E9C14B1F0>\npath = 'C:\\\\Users\\\\Administrator\\\\PycharmProjects\\\\api_test\\\\test_learn.yaml'\n\n    def read_yaml(self, path):\n        \"\"\"\n        读取yaml文件数据\n        :return:\n        \"\"\"\n>       with open(path, encoding='utf-8') as fp:\nE       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Administrator\\\\PycharmProjects\\\\api_test\\\\test_learn.yaml'\n\nutils\\yamlutil.py:18: FileNotFoundError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1680710534952,
+      "stop" : 1680710535110,
+      "duration" : 158
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Administrator\\\\PycharmProjects\\\\api_test\\\\test_learn.yaml'",
+    "statusTrace" : "self = <testcase.learn.test_learn.TestLearn object at 0x0000020E9C14B1F0>\n\n    @allure.story(\"测试用例\")\n    def test_learn(self):\n>       self.get_case_step(selector='get_case')\n\ntestcase\\learn\\test_learn.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nkw\\casekw\\casekw.py:13: in get_case_step\n    name = self.get_data(selector)\nutils\\yamlutil.py:39: in get_data\n    data = self.read_yaml(FilePath)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <testcase.learn.test_learn.TestLearn object at 0x0000020E9C14B1F0>\npath = 'C:\\\\Users\\\\Administrator\\\\PycharmProjects\\\\api_test\\\\test_learn.yaml'\n\n    def read_yaml(self, path):\n        \"\"\"\n        读取yaml文件数据\n        :return:\n        \"\"\"\n>       with open(path, encoding='utf-8') as fp:\nE       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Administrator\\\\PycharmProjects\\\\api_test\\\\test_learn.yaml'\n\nutils\\yamlutil.py:18: FileNotFoundError",
+    "steps" : [ {
+      "name" : "获取开课中课程信息",
+      "time" : {
+        "start" : 1680710535358,
+        "stop" : 1680710535376,
+        "duration" : 18
+      },
+      "status" : "broken",
+      "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Administrator\\\\PycharmProjects\\\\api_test\\\\test_learn.yaml'\n",
+      "statusTrace" : "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\allure_commons\\_allure.py\", line 192, in impl\n    return func(*a, **kw)\n  File \"C:\\Users\\Administrator\\PycharmProjects\\api_test\\kw\\casekw\\casekw.py\", line 13, in get_case_step\n    name = self.get_data(selector)\n  File \"C:\\Users\\Administrator\\PycharmProjects\\api_test\\utils\\yamlutil.py\", line 39, in get_data\n    data = self.read_yaml(FilePath)\n  File \"C:\\Users\\Administrator\\PycharmProjects\\api_test\\utils\\yamlutil.py\", line 18, in read_yaml\n    with open(path, encoding='utf-8') as fp:\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "selector",
+        "value" : "'get_case'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试用例"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.learn"
+  }, {
+    "name" : "suite",
+    "value" : "test_learn"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLearn"
+  }, {
+    "name" : "host",
+    "value" : "PC-202209231525"
+  }, {
+    "name" : "thread",
+    "value" : "17280-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.learn.test_learn"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e3c89a18a5a018b2.json",
+  "parameterValues" : [ ]
+}

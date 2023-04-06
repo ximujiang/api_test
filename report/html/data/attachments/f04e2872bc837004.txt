@@ -1,0 +1,4 @@
+2023-04-06 00:02:15 | INFO | runner.py:70 | 执行文件-> test_learn.yml"
+2023-04-06 00:02:15 | INFO | runner.py:71 | base_url-> None"
+2023-04-06 00:02:15 | INFO | runner.py:72 | variables-> {}"
+2023-04-06 00:02:15 | INFO | runner.py:74 | 运行用例-> test_learn"
