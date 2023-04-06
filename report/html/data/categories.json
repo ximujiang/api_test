@@ -1,0 +1,98 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 1 == 2",
+      "children" : [ {
+        "name" : "xxxxx",
+        "uid" : "2839260aa5a72fb5",
+        "parentUid" : "d89f5ad50f342bab320c0753c9baac45",
+        "status" : "failed",
+        "time" : {
+          "start" : 1680710535112,
+          "stop" : 1680710535113,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d89f5ad50f342bab320c0753c9baac45"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Administrator\\\\PycharmProjects\\\\api_test\\\\test_learn.yaml'",
+      "children" : [ {
+        "name" : "test_learn",
+        "uid" : "e3c89a18a5a018b2",
+        "parentUid" : "cd78050455f02e0c8ba3f43e2132e9b4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1680710535358,
+          "stop" : 1680710535376,
+          "duration" : 18
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cd78050455f02e0c8ba3f43e2132e9b4"
+    }, {
+      "name" : "pytest_yaml_yoyo.exceptions.ParserError: Parsers error: name 'get_course_list' is not defined",
+      "children" : [ {
+        "name" : "test_learn",
+        "uid" : "703d6d3f249f7f40",
+        "parentUid" : "f7df09a9b216db1d7feda25b7d6aaa73",
+        "status" : "broken",
+        "time" : {
+          "start" : 1680710535391,
+          "stop" : 1680710535392,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f7df09a9b216db1d7feda25b7d6aaa73"
+    }, {
+      "name" : "pytest_yaml_yoyo.exceptions.ParserError: Parsers error: name 'get_case_step' is not defined",
+      "children" : [ {
+        "name" : "test_case_title",
+        "uid" : "3893e7dcf6bfa17c",
+        "parentUid" : "595bc5b760e65c5803d7d18011e39df8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1680710535410,
+          "stop" : 1680710535412,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "595bc5b760e65c5803d7d18011e39df8"
+    }, {
+      "name" : "pytest_yaml_yoyo.exceptions.ParserError: Parsers error: name 'get_xxx' is not defined",
+      "children" : [ {
+        "name" : "test_case2",
+        "uid" : "e3181f61afb9c150",
+        "parentUid" : "98175c2f5785334181f2212b5b98e016",
+        "status" : "broken",
+        "time" : {
+          "start" : 1680710535427,
+          "stop" : 1680710535429,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "98175c2f5785334181f2212b5b98e016"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

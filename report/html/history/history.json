@@ -1,0 +1,102 @@
+{
+  "e0b487c8fdcd318f43cc2aad7c166df1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3893e7dcf6bfa17c",
+      "status" : "broken",
+      "statusDetails" : "pytest_yaml_yoyo.exceptions.ParserError: Parsers error: name 'get_case_step' is not defined",
+      "time" : {
+        "start" : 1680710535410,
+        "stop" : 1680710535412,
+        "duration" : 2
+      }
+    } ]
+  },
+  "1f946f06d0d459d9017402001e59e2e5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e3c89a18a5a018b2",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Administrator\\\\PycharmProjects\\\\api_test\\\\test_learn.yaml'",
+      "time" : {
+        "start" : 1680710535358,
+        "stop" : 1680710535376,
+        "duration" : 18
+      }
+    } ]
+  },
+  "c17784b5f1065ba42daf97c2b39cfefe" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e3181f61afb9c150",
+      "status" : "broken",
+      "statusDetails" : "pytest_yaml_yoyo.exceptions.ParserError: Parsers error: name 'get_xxx' is not defined",
+      "time" : {
+        "start" : 1680710535427,
+        "stop" : 1680710535429,
+        "duration" : 2
+      }
+    } ]
+  },
+  "cf14499d428cb513c6ea9ed02d7183ce" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "703d6d3f249f7f40",
+      "status" : "broken",
+      "statusDetails" : "pytest_yaml_yoyo.exceptions.ParserError: Parsers error: name 'get_course_list' is not defined",
+      "time" : {
+        "start" : 1680710535391,
+        "stop" : 1680710535392,
+        "duration" : 1
+      }
+    } ]
+  },
+  "36b320f6c5c1c6d4c9fa49ffe04f7475" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2839260aa5a72fb5",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 1 == 2",
+      "time" : {
+        "start" : 1680710535112,
+        "stop" : 1680710535113,
+        "duration" : 1
+      }
+    } ]
+  }
+}

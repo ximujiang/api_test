@@ -1,0 +1,51 @@
+[ {
+  "uid" : "2839260aa5a72fb5",
+  "name" : "xxxxx",
+  "time" : {
+    "start" : 1680710535112,
+    "stop" : 1680710535113,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e3181f61afb9c150",
+  "name" : "test_case2",
+  "time" : {
+    "start" : 1680710535427,
+    "stop" : 1680710535429,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e3c89a18a5a018b2",
+  "name" : "test_learn",
+  "time" : {
+    "start" : 1680710535358,
+    "stop" : 1680710535376,
+    "duration" : 18
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3893e7dcf6bfa17c",
+  "name" : "test_case_title",
+  "time" : {
+    "start" : 1680710535410,
+    "stop" : 1680710535412,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "703d6d3f249f7f40",
+  "name" : "test_learn",
+  "time" : {
+    "start" : 1680710535391,
+    "stop" : 1680710535392,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

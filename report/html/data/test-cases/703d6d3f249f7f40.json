@@ -1,0 +1,143 @@
+{
+  "uid" : "703d6d3f249f7f40",
+  "name" : "test_learn",
+  "fullName" : "testcase.learn.test_learn#test_learn",
+  "historyId" : "cf14499d428cb513c6ea9ed02d7183ce",
+  "time" : {
+    "start" : 1680710535391,
+    "stop" : 1680710535392,
+    "duration" : 1
+  },
+  "description" : "test_learn",
+  "descriptionHtml" : "<p>test_learn</p>\n",
+  "status" : "broken",
+  "statusMessage" : "pytest_yaml_yoyo.exceptions.ParserError: Parsers error: name 'get_course_list' is not defined",
+  "statusTrace" : "request = <FixtureRequest for <Function test_learn>>\nrequests_session = <pytest_yaml_yoyo.http_session.HttpSession object at 0x0000020E9D6297C0>\n\n>   ???\n\ntest_learn.py:2: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nargs = {'request': <FixtureRequest for <Function test_learn>>, 'requests_session': <pytest_yaml_yoyo.http_session.HttpSession object at 0x0000020E9D6297C0>}\n\n    def execute_yaml_case(args):\n        # 获取被调用函数名称\n        log.info(f'执行文件-> {self.module.__name__}.yml')\n        log.info(f'base_url-> {base_url or args.get(\"request\").config.option.base_url}')\n        log.info(f'variables-> {self.module_variable}')\n        call_function_name = inspect.getframeinfo(inspect.currentframe().f_back)[2]\n        log.info(f'运行用例-> {call_function_name}')\n        # 添加 allure 报告--> story\n        allure.dynamic.feature(f'{self.module.__name__}.yml')\n    \n        for step in case[call_function_name]:\n            # 添加 allure 报告--> title\n            allure.dynamic.title(call_function_name)\n            response = None\n            api_validate = []\n            step_name = step.get('name', 'not step name')\n            # 添加 allure 报告--> step\n            with allure.step(step_name):\n                pass\n            for item, value in step.items():\n                # 执行用例里面的方法\n                if item == 'name':\n                    pass          # noqa\n                elif item == 'api':\n                    root_dir = args.get('request').config.rootdir   # 内置request 获取root_dir\n                    api_path = Path(root_dir).joinpath(value)\n                    raw_api = yaml.safe_load(api_path.open(encoding='utf-8'))\n                    api_validate = raw_api.get('validate')\n                    copy_value = copy.deepcopy(raw_api.get('request'))  # 深拷贝一份新的value\n                    response = self.run_request(args, copy_value, config_hooks, base_url)\n                elif item == 'request':\n                    copy_value = copy.deepcopy(value)  # 深拷贝一份新的value\n                    response = self.run_request(args, copy_value, config_hooks, base_url)\n                elif item == 'extract':\n                    # 提取变量\n                    copy_value = copy.deepcopy(value)\n                    extract_value = render_template_obj.rend_template_any(copy_value, **self.context)\n                    extract_result = self.extract_response(response, extract_value)\n                    log.info(f'extract 提取变量-> {extract_result}')\n                    # 添加到模块变量\n                    self.module_variable.update(extract_result)\n                    if isinstance(self.module_variable, dict):\n                        self.context.update(self.module_variable)    # 加载模块变量\n                elif item == 'validate':\n                    copy_value = copy.deepcopy(value)\n                    # 合并校验\n                    api_validate.extend([v for v in copy_value if v not in api_validate])\n                    validate_value = render_template_obj.rend_template_any(api_validate, **self.context)\n                    log.info(f'validate 校验内容-> {validate_value}')\n                    self.validate_response(response, validate_value)\n                elif item == 'sleep':\n                    sleep_value = render_template_obj.rend_template_any(value, **self.context)\n                    try:\n                        log.info(f'sleep time: {sleep_value}')\n                        time.sleep(sleep_value)\n                    except Exception as msg:\n                        log.error(f'Run error: sleep value must be int or float, error msg: {msg}')\n                elif item == 'skip':\n                    skip_reason = render_template_obj.rend_template_any(value, **self.context)\n                    import pytest\n                    pytest.skip(skip_reason)\n                elif item == 'skipif':   # noqa\n                    if_exp = render_template_obj.rend_template_any(value, **self.context)\n                    log.info(f'skipif : {eval(str(if_exp))}')  # noqa\n                    if eval(str(if_exp)):\n                        import pytest\n                        pytest.skip(str(if_exp))\n                else:\n                    try:\n                        eval(item)(value)\n                    except Exception as msg:\n>                       raise exceptions.ParserError(f'Parsers error: {msg}') from None\nE                       pytest_yaml_yoyo.exceptions.ParserError: Parsers error: name 'get_course_list' is not defined\n\n..\\..\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pytest_yaml_yoyo\\runner.py:139: ParserError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "requests_session",
+    "time" : {
+      "start" : 1680710535390,
+      "stop" : 1680710535390,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1680710534952,
+      "stop" : 1680710535110,
+      "duration" : 158
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "test_learn",
+    "status" : "broken",
+    "statusMessage" : "pytest_yaml_yoyo.exceptions.ParserError: Parsers error: name 'get_course_list' is not defined",
+    "statusTrace" : "request = <FixtureRequest for <Function test_learn>>\nrequests_session = <pytest_yaml_yoyo.http_session.HttpSession object at 0x0000020E9D6297C0>\n\n>   ???\n\ntest_learn.py:2: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nargs = {'request': <FixtureRequest for <Function test_learn>>, 'requests_session': <pytest_yaml_yoyo.http_session.HttpSession object at 0x0000020E9D6297C0>}\n\n    def execute_yaml_case(args):\n        # 获取被调用函数名称\n        log.info(f'执行文件-> {self.module.__name__}.yml')\n        log.info(f'base_url-> {base_url or args.get(\"request\").config.option.base_url}')\n        log.info(f'variables-> {self.module_variable}')\n        call_function_name = inspect.getframeinfo(inspect.currentframe().f_back)[2]\n        log.info(f'运行用例-> {call_function_name}')\n        # 添加 allure 报告--> story\n        allure.dynamic.feature(f'{self.module.__name__}.yml')\n    \n        for step in case[call_function_name]:\n            # 添加 allure 报告--> title\n            allure.dynamic.title(call_function_name)\n            response = None\n            api_validate = []\n            step_name = step.get('name', 'not step name')\n            # 添加 allure 报告--> step\n            with allure.step(step_name):\n                pass\n            for item, value in step.items():\n                # 执行用例里面的方法\n                if item == 'name':\n                    pass          # noqa\n                elif item == 'api':\n                    root_dir = args.get('request').config.rootdir   # 内置request 获取root_dir\n                    api_path = Path(root_dir).joinpath(value)\n                    raw_api = yaml.safe_load(api_path.open(encoding='utf-8'))\n                    api_validate = raw_api.get('validate')\n                    copy_value = copy.deepcopy(raw_api.get('request'))  # 深拷贝一份新的value\n                    response = self.run_request(args, copy_value, config_hooks, base_url)\n                elif item == 'request':\n                    copy_value = copy.deepcopy(value)  # 深拷贝一份新的value\n                    response = self.run_request(args, copy_value, config_hooks, base_url)\n                elif item == 'extract':\n                    # 提取变量\n                    copy_value = copy.deepcopy(value)\n                    extract_value = render_template_obj.rend_template_any(copy_value, **self.context)\n                    extract_result = self.extract_response(response, extract_value)\n                    log.info(f'extract 提取变量-> {extract_result}')\n                    # 添加到模块变量\n                    self.module_variable.update(extract_result)\n                    if isinstance(self.module_variable, dict):\n                        self.context.update(self.module_variable)    # 加载模块变量\n                elif item == 'validate':\n                    copy_value = copy.deepcopy(value)\n                    # 合并校验\n                    api_validate.extend([v for v in copy_value if v not in api_validate])\n                    validate_value = render_template_obj.rend_template_any(api_validate, **self.context)\n                    log.info(f'validate 校验内容-> {validate_value}')\n                    self.validate_response(response, validate_value)\n                elif item == 'sleep':\n                    sleep_value = render_template_obj.rend_template_any(value, **self.context)\n                    try:\n                        log.info(f'sleep time: {sleep_value}')\n                        time.sleep(sleep_value)\n                    except Exception as msg:\n                        log.error(f'Run error: sleep value must be int or float, error msg: {msg}')\n                elif item == 'skip':\n                    skip_reason = render_template_obj.rend_template_any(value, **self.context)\n                    import pytest\n                    pytest.skip(skip_reason)\n                elif item == 'skipif':   # noqa\n                    if_exp = render_template_obj.rend_template_any(value, **self.context)\n                    log.info(f'skipif : {eval(str(if_exp))}')  # noqa\n                    if eval(str(if_exp)):\n                        import pytest\n                        pytest.skip(str(if_exp))\n                else:\n                    try:\n                        eval(item)(value)\n                    except Exception as msg:\n>                       raise exceptions.ParserError(f'Parsers error: {msg}') from None\nE                       pytest_yaml_yoyo.exceptions.ParserError: Parsers error: name 'get_course_list' is not defined\n\n..\\..\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pytest_yaml_yoyo\\runner.py:139: ParserError",
+    "steps" : [ {
+      "name" : "not step name",
+      "time" : {
+        "start" : 1680710535392,
+        "stop" : 1680710535392,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "f04e2872bc837004",
+      "name" : "log",
+      "source" : "f04e2872bc837004.txt",
+      "type" : "text/plain",
+      "size" : 266
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "requests_session::0",
+    "time" : {
+      "start" : 1680710535444,
+      "stop" : 1680710535444,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "test_learn.yml"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.learn"
+  }, {
+    "name" : "suite",
+    "value" : "test_learn"
+  }, {
+    "name" : "host",
+    "value" : "PC-202209231525"
+  }, {
+    "name" : "thread",
+    "value" : "17280-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.learn.test_learn"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "703d6d3f249f7f40.json",
+  "parameterValues" : [ ]
+}

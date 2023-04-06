@@ -1,0 +1,37 @@
+{
+  "total" : 4,
+  "items" : [ {
+    "uid" : "21eb4e07decafbdfb2583fac2ad3066e",
+    "name" : "testcaseaaaa.yml",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "8d8946e57f22bbeb4d7b953ca127bb9e",
+    "name" : "测试用例",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "1d5228dc34b351009887ffa26ec0487a",
+    "name" : "test_learn.yml",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

@@ -1,0 +1,86 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test.test_aaa",
+    "children" : [ {
+      "name" : "xxxxx",
+      "uid" : "2839260aa5a72fb5",
+      "parentUid" : "884b83eefd73a81e02587385e710b616",
+      "status" : "failed",
+      "time" : {
+        "start" : 1680710535112,
+        "stop" : 1680710535113,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "test.test_aaa"
+  }, {
+    "name" : "testcase",
+    "children" : [ {
+      "name" : "learn.test_learn",
+      "children" : [ {
+        "name" : "test_learn",
+        "uid" : "e3c89a18a5a018b2",
+        "parentUid" : "9d1cae1f098f25c361c4ef570d1e19ce",
+        "status" : "broken",
+        "time" : {
+          "start" : 1680710535358,
+          "stop" : 1680710535376,
+          "duration" : 18
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_learn",
+        "uid" : "703d6d3f249f7f40",
+        "parentUid" : "9d1cae1f098f25c361c4ef570d1e19ce",
+        "status" : "broken",
+        "time" : {
+          "start" : 1680710535391,
+          "stop" : 1680710535392,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "learn.test_learn"
+    }, {
+      "name" : "test.testcaseaaaa",
+      "children" : [ {
+        "name" : "test_case_title",
+        "uid" : "3893e7dcf6bfa17c",
+        "parentUid" : "c42e683c95b60d4c26405e3c3f0e9a39",
+        "status" : "broken",
+        "time" : {
+          "start" : 1680710535410,
+          "stop" : 1680710535412,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_case2",
+        "uid" : "e3181f61afb9c150",
+        "parentUid" : "c42e683c95b60d4c26405e3c3f0e9a39",
+        "status" : "broken",
+        "time" : {
+          "start" : 1680710535427,
+          "stop" : 1680710535429,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "test.testcaseaaaa"
+    } ],
+    "uid" : "559e15d0a5469c40d1629e36b5ae40ea"
+  } ]
+}

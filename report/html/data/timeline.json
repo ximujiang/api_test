@@ -1,0 +1,78 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "PC-202209231525",
+    "children" : [ {
+      "name" : "17280-MainThread",
+      "children" : [ {
+        "name" : "test_learn",
+        "uid" : "e3c89a18a5a018b2",
+        "parentUid" : "70faafc91c464632ff8c63fc6ac77dc7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1680710535358,
+          "stop" : 1680710535376,
+          "duration" : 18
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_case2",
+        "uid" : "e3181f61afb9c150",
+        "parentUid" : "70faafc91c464632ff8c63fc6ac77dc7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1680710535427,
+          "stop" : 1680710535429,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "xxxxx",
+        "uid" : "2839260aa5a72fb5",
+        "parentUid" : "70faafc91c464632ff8c63fc6ac77dc7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1680710535112,
+          "stop" : 1680710535113,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_case_title",
+        "uid" : "3893e7dcf6bfa17c",
+        "parentUid" : "70faafc91c464632ff8c63fc6ac77dc7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1680710535410,
+          "stop" : 1680710535412,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_learn",
+        "uid" : "703d6d3f249f7f40",
+        "parentUid" : "70faafc91c464632ff8c63fc6ac77dc7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1680710535391,
+          "stop" : 1680710535392,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "70faafc91c464632ff8c63fc6ac77dc7"
+    } ],
+    "uid" : "913bb6faccc2dfbf54c455bd680d3eb2"
+  } ]
+}
